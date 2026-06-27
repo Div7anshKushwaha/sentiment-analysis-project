@@ -72,7 +72,7 @@ def train_models(df):
     os.makedirs(MODEL_PATH, exist_ok=True)
 
     df = df.copy()
-    df['sentiment'] = df['sentiment'].replace({'positive': 1, 'negative': 0})
+    df['sentiment'] = df['sentiment'].map({'positive': 1, 'negative': 0}).astype(int)
 
     with st.spinner("🧹 Cleaning and preprocessing reviews..."):
         df['review'] = df['review'].apply(preprocess)

@@ -100,6 +100,13 @@ matplotlib>=3.7.0
 
 ---
 
+## 💭 Why I built this
+
+I wanted to move beyond basic ML projects with .pkl files
+and understand how production NLP actually works.
+This was my first time using HuggingFace transformers
+and deploying a deep learning model — learned a lot!
+
 ## 👤 Author
 
 **Divyansh Kushwaha**
